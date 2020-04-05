@@ -1,0 +1,44 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      logo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+ <ion-content>
+   <form>
+     <ion-list>
+       <ion-item>
+         <ion-label position="stacked" required>User Name:</ion-label>
+         <ion-input type="text" name="licenseNo" [(ngModel)]="signUpDetails.licenseNo">
+         </ion-input>
+       </ion-item>
+       <ion-item>
+        <ion-label position="stacked" name="password" [(ngModel)]="signUpDetails.password">Password:</ion-label>
+        <ion-input type="password">
+        </ion-input>
+      </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Re-enter password:</ion-label>
+          <ion-input type="password">
+          </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Driver Contact No:</ion-label>
+        <ion-input type="text" name="driverContactNo" [(ngModel)]="driverContactNo">
+        </ion-input>
+    </ion-item>
+      <ion-button expand="block" (click)="signUp()" shape="round" color="success">Submit</ion-button>
+     </ion-list>
+   </form>
+ </ion-content>
+
+
+<ion-footer [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+     copy right @2020
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>

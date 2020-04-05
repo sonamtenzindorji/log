@@ -1,0 +1,36 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      logo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+ <ion-content>
+   <form>
+     <ion-list>
+       <ion-item>
+         <ion-label position="stacked">CID:</ion-label>
+         <ion-input [(ngModel)]="postData.dCID" type="text" name="dCID"></ion-input>
+       </ion-item>
+
+       <ion-item>
+       <ion-label position="stacked">Password:</ion-label>
+       <ion-input [(ngModel)]="postData.password" type="text" name="password"></ion-input>
+       </ion-item>
+
+       <ion-button expand="block" shape="round" color="success" (click)="actionLogin()">Login</ion-button>
+       <ion-button expand="block" shape="round" color="success" (click)="registration()">registration</ion-button>
+
+     </ion-list>
+   </form>
+ </ion-content>
+
+<ion-footer [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+     copy right @2020
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>

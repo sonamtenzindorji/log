@@ -1,0 +1,8 @@
+{
+  "name": "PassengerTrackApp",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
